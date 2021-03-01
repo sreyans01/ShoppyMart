@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "875685800694",
+    "project_id": "shoppymart-e919b",
+    "storage_bucket": "shoppymart-e919b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875685800694:android:783344a874b930493a9ad7",
+        "android_client_info": {
+          "package_name": "com.shopping.shoppymart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875685800694-t2n14tpv21i4uh421iuq3dcnaedccpl1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shopping.shoppymart",
+            "certificate_hash": "e3952ad54bd8a1fd39265018ff7b4893a5d1dee2"
+          }
+        },
+        {
+          "client_id": "875685800694-gjc3c784i6a3v49kb12fa565srji8qmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChyH6s3EEKqx5g0VUxX7S3HK1HXQY4MNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875685800694-gjc3c784i6a3v49kb12fa565srji8qmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
