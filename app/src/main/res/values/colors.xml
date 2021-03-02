@@ -5,6 +5,53 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#148E13</color>
+    <color name="colorPrimaryDark">#148E13</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorAccent2">#54BBF6</color>
+
+    <color name="colorAccent3">#ffe2ff</color>
+
+
+
+
+
+
+
+    <color name="colorPrimaryDark22">#F5E108</color>
+    <color name="quotes2_text">#0818F5</color>
+    <color name="colorPrimary2">#F9FCFB</color>
+    <color name="SignUp">#0E1DEE</color>
+    <color name="buttoncolor">#73F508</color>
+    <color name="colorPrimaryDark223">#EDCFFC</color>
+    <color name="colorPrimaryTextSignUP">#54BBF6</color>
+    <color name="ForgotPass">#EE0E12</color>
+    <color name="Tutiontimingscolour">#DF8AD3</color>
+    <color name="DefaultTextViewColour">#B30AE6</color>
+    <color name="DefaultTextViewColour1">#15E60A</color>
+    <color name="DefaultTextViewColour2">#E6710A</color>
+    <color name="DefaultTextViewColour3">#FBCF0B</color>
+    <color name="DefaultTextViewColour4">#F01063</color>
+    <color name="DefaultTextViewColour5">#16B897</color>
+    <color name="DefaultTextColour6">#141413</color>
+    <color name="DefaultTextViewColour6">#141413</color>
+    <color name="DefaultTextViewColour7">#73E3CD</color>
+    <color name="DefaultBackgroundColour1">#F7CB08</color>
+    <color name="newtextcolorhint">#78D6E9</color>
+    <color name="DefaultTextViewColor8">#2196F3</color>
+
+    <color name="DarkBlue">#0077FF</color>
+    <color name="LightBlue">#00D4FF</color>
+    <color name="orangetextcolor">#FF5722</color>
+    <color name="oldpurp_stu">#9E3AB7</color>
+    <color name="paybtnquiz1">#FFEB3B</color>
+    <color name="lighter_gray">#9F9D9D</color>
+    <color name="white">#fff</color>
+    <color name="black">#000000</color>
+    <color name="dark_green">#148E13</color>
+
+    <color name="gray_fortext1">#4D000000</color>
+
 </resources>
