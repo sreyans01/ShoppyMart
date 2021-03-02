@@ -47,7 +47,8 @@ public class LoginActivity extends AppCompatActivity {
         final GoogleSignInClient mGoogleSignInClient;
         mGoogleSignInClient = GoogleSignIn.getClient(context, gso);
         SignInButton signInButton = findViewById(R.id.sign_in_button);
-        signInButton.setSize(SignInButton.SIZE_STANDARD);
+        if(signInButton!=null)
+            signInButton.setSize(SignInButton.SIZE_STANDARD);
         try {
             TextView textView = (TextView) signInButton.getChildAt(0);
             textView.setText("Sign in with Google");

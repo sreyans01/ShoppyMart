@@ -72,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
         HandleOnClicks();
 
 
+        try {
+            onNavigationItemSelectedListener.onNavigationItemSelected(bottomNavigationView.getMenu().getItem(0));
+        }catch (Exception e){}
     }
 
     private void allfindviewbyids(){
