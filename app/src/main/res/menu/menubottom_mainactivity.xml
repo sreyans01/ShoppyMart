@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+    <item
+        android:id="@+id/menu_featured"
+        android:title="Featured"
+        android:iconTint="@color/ForgotPass"
+        android:icon="@drawable/ic_favorite_border_primary"
+        />
+
+    <item
+        android:id="@+id/menu_sell"
+        android:title="Sell"
+        android:icon="@drawable/ic_baseline_sell_24"
+        />
+    <item
+        android:id="@+id/menu_account"
+        android:title="Account"
+        android:icon="@drawable/ic_account_black_24dp"
+        />
+
+
+
 </menu>
