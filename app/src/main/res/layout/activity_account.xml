@@ -1,16 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent"
 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rootRL"
-    android:orientation="vertical"
-
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
     android:background="@drawable/background"
+    android:orientation="vertical">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
 
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="128dp"
+        android:src="@drawable/elvyn_claire_profile"
+        android:translationX="-5dp"
+        android:translationY="80dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="301dp"
+        android:background="@drawable/roundbutton"
+        android:bottomLeftRadius="20dp"
+        android:bottomRightRadius="20dp"
+        android:text="Account"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:translationX="70dp" />
 
-    >
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="409dp"
+        android:background="@drawable/roundbutton"
+        android:text="Address"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:translationX="70dp"
+        android:translationY="-20dp" />
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="488dp"
+        android:background="@drawable/roundbutton"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:translationX="70dp"
+        android:translationY="-5dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="64dp"
+        android:layout_height="47dp"
+        android:background="@drawable/text_border"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Account"
+        android:textAlignment="center"
+        android:textColor="#F6F4F4"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:background="@drawable/text_border"/>
 </RelativeLayout>
