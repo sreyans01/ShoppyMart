@@ -121,10 +121,12 @@ public class AddItemActivity extends AppCompatActivity {
                 if(getTextFromEditText(R.id.e_dateOfManufacture).compareTo("")==0){
                     Toast.makeText(context,"Date of Manufacture must be specified",Toast.LENGTH_SHORT).show();
                     return;
+                    //Hello
                 }
                 if(getTextFromEditText(R.id.e_price).compareTo("")==0){
                     Toast.makeText(context,"Product Price cannot be empty",Toast.LENGTH_SHORT).show();
                     return;
+
                 }
 
                 productDetails.setProductName(getTextFromEditText(R.id.e_productname));
