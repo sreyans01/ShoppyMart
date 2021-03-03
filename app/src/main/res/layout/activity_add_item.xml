@@ -143,7 +143,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Product Name"
+                    android:text="Product Name*"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="@dimen/largeHeadingText"/>
@@ -176,7 +176,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Enter Price (in ₹)"
+                    android:text="Enter Price (in ₹)*"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="@dimen/largeHeadingText"/>
@@ -207,7 +207,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Date of Manufacture"
+                    android:text="Date of Manufacture*"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="@dimen/largeHeadingText"/>
@@ -559,6 +559,7 @@
                     android:textSize="@dimen/largeHeadingText"/>
 
                 <EditText
+                    android:id="@+id/e_productDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
@@ -733,6 +734,7 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/addItemBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
