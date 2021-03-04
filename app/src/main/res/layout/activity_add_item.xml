@@ -4,40 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddItemActivity">
+    tools:context=".AddItemActivity"
+    android:background="#422057FF"
+
+    >
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="422057FF"
         android:layout_alignParentTop="true"
         android:visibility="visible"
         app:popupTheme="@color/colorPrimaryDark">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#422057FF">
+
             <ImageView
                 android:id="@+id/backButton"
-                android:layout_width="50dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_arrow_back_blue_24dp"
-                android:layout_centerVertical="true"
+                android:layout_width="63dp"
+                android:layout_height="43dp"
                 android:layout_alignParentLeft="true"
+                android:layout_marginLeft="-14dp"
+                android:src="@drawable/ic_arrow_back_blue_24dp"
                 app:tint="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add Your Item"
-                android:backgroundTint="@color/purple_500"
-                android:textColor="@color/white"
-                android:textStyle="bold"
                 android:layout_centerHorizontal="true"
+                android:layout_marginVertical="15dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Add Your Item"
+                android:textColor="@color/white"
                 android:textSize="@dimen/extraLargeText"
 
-                android:layout_marginVertical="15dp"/>
+                android:textStyle="bold" />
 
 
         </RelativeLayout>
@@ -47,10 +52,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar">
+        android:layout_below="@id/toolbar"
+
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+
+
 
             android:overScrollMode="never"
             android:orientation="vertical">
@@ -59,7 +68,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="#ffe2ff">
+                android:background="@drawable/add_item_curved_bg">
 
                 <ImageView
                     android:id="@+id/mainImage"
@@ -67,6 +76,7 @@
                     android:layout_height="150dp"
                     android:layout_centerInParent="true"
                     android:src="@drawable/cake"
+
 
                     />
 
@@ -76,7 +86,8 @@
             <HorizontalScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                >
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -146,16 +157,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Product Name*"
-                    android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/largeHeadingText"/>
+                    android:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/e_productname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
-                    android:background="@drawable/default_edittext_shape"
+                    android:background="@drawable/curved_textbox_bg"
                     android:hint="Write the name of the item"
                     android:paddingHorizontal="10dp"
                     android:typeface="serif"
@@ -179,19 +189,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enter Price (in ₹)*"
-                    android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/largeHeadingText"/>
+                    android:textSize="@dimen/largeHeadingText" />
 
                 <EditText
                     android:id="@+id/e_price"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
-                    android:background="@drawable/default_edittext_shape"
+                    android:background="@drawable/curved_textbox_bg"
                     android:paddingHorizontal="10dp"
                     android:typeface="serif"
                     android:hint="Selling price of the item in ₹"
+                    android:textStyle="bold"
                     android:textSize="@dimen/mediumTextSize"
                     android:minHeight="45dp"
                     android:inputType="number"
@@ -210,7 +220,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Date of Manufacture*"
-                    android:textStyle="bold"
+
                     android:textColor="@color/black"
                     android:textSize="@dimen/largeHeadingText"/>
 
@@ -219,7 +229,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
-                    android:background="@drawable/default_edittext_shape"
+                    android:background="@drawable/curved_textbox_bg"
                     android:hint="Click to add the date of manufacture"
                     android:paddingHorizontal="10dp"
                     android:textSize="@dimen/mediumTextSize"
@@ -244,7 +254,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="District of Origin"
-                    android:textStyle="bold"
+
                     android:textColor="@color/black"
                     android:textSize="@dimen/largeHeadingText"/>
 
@@ -253,7 +263,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
-                    android:background="@drawable/default_edittext_shape"
+                    android:background="@drawable/curved_textbox_bg"
                     android:paddingHorizontal="10dp"
                     android:typeface="serif"
                     android:hint="Enter village and district of origin of the product"
@@ -278,7 +288,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Shelf Life"
-                    android:textStyle="bold"
+
                     android:textColor="@color/black"
                     android:textSize="@dimen/largeHeadingText"/>
 
@@ -287,7 +297,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
-                    android:background="@drawable/default_edittext_shape"
+                    android:background="@drawable/curved_textbox_bg"
                     android:paddingHorizontal="10dp"
                     android:typeface="serif"
                     android:hint="How long(in months) can the product be fit for consumption?"
@@ -312,7 +322,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Basic Ingredients"
-                    android:textStyle="bold"
+
                     android:textColor="@color/black"
                     android:textSize="@dimen/largeHeadingText"/>
 
@@ -321,7 +331,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
-                    android:background="@drawable/default_edittext_shape"
+                    android:background="@drawable/curved_textbox_bg"
                     android:paddingHorizontal="10dp"
                     android:typeface="serif"
                     android:hint="Please enter the basic ingredients in your product"
@@ -346,7 +356,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Storage Tips"
-                    android:textStyle="bold"
+
                     android:textColor="@color/black"
                     android:textSize="@dimen/largeHeadingText"/>
 
@@ -355,7 +365,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
-                    android:background="@drawable/default_edittext_shape"
+                    android:background="@drawable/curved_textbox_bg"
                     android:paddingHorizontal="10dp"
                     android:typeface="serif"
                     android:hint="What precautions should be kept in mind to maximise shelf life?"
@@ -383,13 +393,14 @@
                     android:id="@+id/rg_season"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:checkedButton="@id/summer">
+                    android:checkedButton="@id/summer"
+                    android:background="@drawable/curved_textbox_bg">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Season"
-                        android:textStyle="bold"
+
                         android:textColor="@color/black"
                         android:textSize="@dimen/largeHeadingText"
                         />
@@ -430,13 +441,14 @@
                     android:id="@+id/rg_basicTaste"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:checkedButton="@id/sweet" >
+                    android:checkedButton="@id/sweet"
+                    android:background="@drawable/curved_textbox_bg">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Basic Taste"
-                        android:textStyle="bold"
+
                         android:textColor="@color/black"
                         android:textSize="@dimen/largeHeadingText"
                         />
@@ -502,13 +514,14 @@
                     android:id="@+id/rg_productClassification"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:checkedButton="@id/snacks" >
+                    android:checkedButton="@id/snacks"
+                    android:background="@drawable/curved_textbox_bg">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Product Classification"
-                        android:textStyle="bold"
+
                         android:textColor="@color/black"
                         android:textSize="@dimen/largeHeadingText"
                         />
@@ -555,8 +568,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
                     android:text="Product Description"
-                    android:textStyle="bold"
+
                     android:textColor="@color/black"
                     android:textSize="@dimen/largeHeadingText"/>
 
@@ -565,9 +579,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
-                    android:background="@drawable/default_edittext_shape"
+                    android:background="@drawable/curved_textbox_bg"
                     android:paddingHorizontal="10dp"
                     android:typeface="serif"
+
                     android:hint="What is special about your product?"
                     android:textSize="@dimen/normalTextSize"
                     android:minHeight="45dp"
@@ -591,13 +606,14 @@
                     android:id="@+id/rg_productCategory"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:checkedButton="@id/everyday_essentials">
+                    android:checkedButton="@id/everyday_essentials"
+                    android:background="@drawable/curved_textbox_bg">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Product Category"
-                        android:textStyle="bold"
+
                         android:textColor="@color/black"
                         android:textSize="@dimen/largeHeadingText"
                         />
@@ -644,13 +660,14 @@
                         android:layout_height="wrap_content"
                         android:checkedButton="@id/rajasthan"
                         android:orientation="horizontal"
+                        android:background="@drawable/curved_textbox_bg"
                         >
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Region"
-                            android:textStyle="bold"
+
                             android:textColor="@color/black"
                             android:textSize="@dimen/largeHeadingText"
                             />
@@ -744,7 +761,7 @@
                 android:paddingVertical="10dp"
                 android:layout_marginTop="20dp"
                 android:textColor="@color/white"
-                android:backgroundTint="@color/dark_green"
+                android:backgroundTint="#FF203FFF"
                 android:text="ADD THIS ITEM"/>
 
             <Space

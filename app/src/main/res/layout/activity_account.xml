@@ -5,18 +5,19 @@
     android:id="@+id/rootRL"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/account_page_bg"
     android:orientation="vertical">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
-        android:layout_width="155dp"
-        android:layout_height="155dp"
+        android:layout_width="182dp"
+        android:layout_height="175dp"
 
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="128dp"
+        android:layout_marginEnd="122dp"
         android:src="@drawable/elvyn_claire_profile"
         android:translationX="-5dp"
-        android:translationY="80dp"
+        android:translationY="150dp"
         app:civ_border_color="#FF000000"
         app:civ_border_width="2dp" />
 
@@ -27,12 +28,16 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="301dp"
         android:background="@drawable/roundbutton"
+
         android:bottomLeftRadius="20dp"
         android:bottomRightRadius="20dp"
         android:text="Account"
+        android:textColor=" #121F6D
+"
         android:textAlignment="center"
         android:textSize="24sp"
-        android:translationX="70dp" />
+        android:translationX="70dp"
+        android:translationY="70dp" />
 
     <Button
         android:id="@+id/button3"
@@ -42,10 +47,11 @@
         android:layout_marginTop="409dp"
         android:background="@drawable/roundbutton"
         android:text="Address"
+        android:textColor=" #121F6D"
         android:textAlignment="center"
         android:textSize="24sp"
         android:translationX="70dp"
-        android:translationY="-20dp" />
+        android:translationY="55dp" />
 
     <Button
         android:id="@+id/button4"
@@ -54,27 +60,30 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="488dp"
         android:background="@drawable/roundbutton"
+        android:textColor=" #121F6D"
         android:text="Logout"
         android:textAlignment="center"
         android:textSize="24sp"
         android:translationX="70dp"
-        android:translationY="-5dp" />
+        android:translationY="70dp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="64dp"
-        android:layout_height="47dp"
-        android:background="@drawable/text_border"
-        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+        android:layout_width="65dp"
+        android:layout_height="36dp"
+
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+        />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+
         android:text="My Account"
         android:textAlignment="center"
         android:textColor="#F6F4F4"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        android:background="@drawable/text_border"/>
+        android:textSize="30sp"
+        android:textStyle="bold" />
 </RelativeLayout>
