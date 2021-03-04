@@ -55,6 +55,7 @@ public class LoginActivity extends AppCompatActivity {
         } catch (ClassCastException | NullPointerException e) {
             e.printStackTrace();
         }
+        if(signInButton!=null)
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

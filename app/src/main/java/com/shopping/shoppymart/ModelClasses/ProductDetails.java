@@ -6,6 +6,8 @@ import java.util.List;
 
 public class ProductDetails implements Serializable {
 
+    private String productUID;
+    private String sellerId;
     private String productName;
     private long productPrice;
     private String productSeason;
@@ -20,9 +22,13 @@ public class ProductDetails implements Serializable {
     private String productCategory;//premium buy or everyday essential
     private String productClassification; //snacks, spices or pickles
     private long productImageCount;
-    private List<String> productImageUrls;
+    private String productRating;
+    private String productReviews;
+
 
     public ProductDetails() {
+        this.productUID = "";
+        this.sellerId = "";
         this.productName = "";
         this.productPrice = -1;
         this.productSeason = "Summer";
@@ -37,7 +43,24 @@ public class ProductDetails implements Serializable {
         this.productCategory = "Everyday Essentials";
         this.productClassification = "Snacks";
         this.productImageCount=0;
-        this.productImageUrls = new ArrayList<>();
+        this.productRating="0.0";
+        this.productReviews="";
+    }
+
+    public String getProductUID() {
+        return productUID;
+    }
+
+    public void setProductUID(String productUID) {
+        this.productUID = productUID;
+    }
+
+    public String getSellerId() {
+        return sellerId;
+    }
+
+    public void setSellerId(String sellerId) {
+        this.sellerId = sellerId;
     }
 
     public String getProductName() {
@@ -152,11 +175,19 @@ public class ProductDetails implements Serializable {
         this.productImageCount = productImageCount;
     }
 
-    public List<String> getProductImageUrls() {
-        return productImageUrls;
+    public String getProductRating() {
+        return productRating;
     }
 
-    public void setProductImageUrls(List<String> productImageUrls) {
-        this.productImageUrls = productImageUrls;
+    public void setProductRating(String productRating) {
+        this.productRating = productRating;
+    }
+
+    public String getProductReviews() {
+        return productReviews;
+    }
+
+    public void setProductReviews(String productReviews) {
+        this.productReviews = productReviews;
     }
 }

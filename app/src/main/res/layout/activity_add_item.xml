@@ -113,12 +113,14 @@
                     <!-- //color in above block : lighter gray replaced by white-->
 
                     <ImageView
+                        android:id="@+id/img2"
                         android:layout_width="40dp"
                         android:layout_gravity="center"
                         android:background="@color/white"
                         android:layout_marginHorizontal="5dp"
                         android:layout_height="40dp"/>
                     <ImageView
+                        android:id="@+id/img3"
                         android:layout_width="40dp"
                         android:layout_gravity="center"
                         android:background="@color/white"
@@ -223,7 +225,7 @@
                     android:textSize="@dimen/mediumTextSize"
                     android:typeface="serif"
                     android:minHeight="45dp"
-                    android:inputType="textCapSentences|textShortMessage"
+                    android:editable="false"
                     android:gravity="center_vertical"
                     />
 
@@ -288,7 +290,7 @@
                     android:background="@drawable/default_edittext_shape"
                     android:paddingHorizontal="10dp"
                     android:typeface="serif"
-                    android:hint="How long can the product be fit for consumption?"
+                    android:hint="How long(in months) can the product be fit for consumption?"
                     android:textSize="@dimen/mediumTextSize"
                     android:minHeight="45dp"
                     android:inputType="number"
@@ -569,7 +571,7 @@
                     android:hint="What is special about your product?"
                     android:textSize="@dimen/normalTextSize"
                     android:minHeight="45dp"
-                    android:inputType="number"
+                    android:inputType="textCapSentences"
                     android:gravity="center_vertical"
                     />
 

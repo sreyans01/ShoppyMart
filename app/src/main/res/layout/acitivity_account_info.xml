@@ -12,8 +12,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="#FFA500"
         android:layout_alignParentTop="true"
-        android:visibility="visible"
-        app:popupTheme="#FFA500">
+        android:visibility="visible">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -36,7 +35,6 @@
                 android:textStyle="bold"
                 android:layout_centerHorizontal="true"
                 android:textSize="@dimen/extraLargeText"
-
                 android:layout_marginVertical="15dp"/>
 
 
@@ -44,16 +42,12 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:overScrollMode="never"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_below="@id/toolbar">
 
 
             <RelativeLayout
@@ -75,31 +69,31 @@
             </RelativeLayout>
 
 
-                <LinearLayout
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Change Profile Photo: "
-                        android:layout_gravity="center_vertical"
-                        android:paddingHorizontal="5dp"
-                        android:textAllCaps="false"/>
+                    android:layout_height="wrap_content"
+                    android:text="Change Profile Photo: "
+                    android:layout_gravity="center_vertical"
+                    android:paddingHorizontal="5dp"
+                    android:textAllCaps="false"/>
 
 
 
-                    <ImageButton
-                        android:id="@+id/addImageBtn"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/ic_gallery_icon"
-                        />
+                <ImageButton
+                    android:id="@+id/addImageBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_gallery_icon"
+                    />
 
 
-                </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -233,13 +227,8 @@
 
         </LinearLayout>
 
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"/>
-
-    </ScrollView>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
 
 </RelativeLayout>
-
-

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".Productdetails"> //insert class Products name
+    > //insert class Products name
 
     <ImageView
         android:id="@+id/imageView"
@@ -178,4 +178,3 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-</ScrollView>
