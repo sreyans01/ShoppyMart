@@ -4,96 +4,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddItemActivity">
+    tools:context=".AddItemActivity"
+    android:background="@drawable/activity_account_info"
+
+    >
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#FFA500"
+        android:background=""
         android:layout_alignParentTop="true"
-        android:visibility="visible">
+        android:visibility="visible"
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="">
+
             <ImageView
                 android:id="@+id/backButton"
-                android:layout_width="50dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_arrow_back_blue_24dp"
-                android:layout_centerVertical="true"
+                android:layout_width="63dp"
+                android:layout_height="43dp"
                 android:layout_alignParentLeft="true"
+                android:layout_marginLeft="-14dp"
+                android:src="@drawable/ic_arrow_back_blue_24dp"
                 app:tint="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Your Account Details"
-                android:backgroundTint="@color/purple_500"
-                android:textColor="@color/white"
-                android:textStyle="bold"
                 android:layout_centerHorizontal="true"
+                android:layout_marginVertical="15dp"
+                android:backgroundTint=""
+                android:text="Your Account Details"
+                android:textColor="#000000"
                 android:textSize="@dimen/extraLargeText"
-                android:layout_marginVertical="15dp"/>
+
+                android:textStyle="bold" />
 
 
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+
+
+
             android:overScrollMode="never"
-            android:orientation="vertical"
-            android:layout_below="@id/toolbar">
+            android:orientation="vertical">
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="#fff44f">
+                android:background="">
 
                 <de.hdodenhof.circleimageview.CircleImageView
-                    xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/profile_image"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:src="@drawable/elvyn_claire_profile"
+                    android:layout_width="193dp"
+                    android:layout_height="155dp"
                     android:layout_centerInParent="true"
-                    app:civ_border_width="2dp"
-                    app:civ_border_color="#FF000000"/>
+                    android:src="@drawable/elvyn_claire_profile"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
 
 
             </RelativeLayout>
 
-
-            <LinearLayout
+            <HorizontalScrollView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                >
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Change Profile Photo: "
-                    android:layout_gravity="center_vertical"
-                    android:paddingHorizontal="5dp"
-                    android:textAllCaps="false"/>
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingHorizontal="5dp"
+                        android:text="Change Profile Photo: "
+                        android:textAllCaps="false"
+                        android:textColor="#FF000000"
+
+                        android:textStyle="bold" />
 
 
 
-                <ImageButton
-                    android:id="@+id/addImageBtn"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_gallery_icon"
-                    />
+                    <ImageButton
+                        android:id="@+id/addImageBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/addicon"/>
 
 
-            </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -105,17 +129,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Name: "
-                    android:textStyle="bold"
+                    android:text="Name"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/largeHeadingText"/>
+                    android:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/e_productname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
-                    android:background="@drawable/default_edittext_shape"
+                    android:background="@drawable/curved_textbox_bg"
                     android:hint=""
                     android:paddingHorizontal="10dp"
                     android:typeface="serif"
@@ -139,19 +162,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Address: "
-                    android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/largeHeadingText"/>
+                    android:textSize="@dimen/largeHeadingText" />
 
                 <EditText
                     android:id="@+id/e_price"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
-                    android:background="@drawable/default_edittext_shape"
+                    android:background="@drawable/curved_textbox_bg"
                     android:paddingHorizontal="10dp"
                     android:typeface="serif"
                     android:hint=""
+                    android:textStyle="bold"
                     android:textSize="@dimen/mediumTextSize"
                     android:minHeight="45dp"
                     android:inputType="number"
@@ -169,8 +192,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Phone Number: "
-                    android:textStyle="bold"
+                    android:text="Phone Number"
+
                     android:textColor="@color/black"
                     android:textSize="@dimen/largeHeadingText"/>
 
@@ -179,13 +202,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
-                    android:background="@drawable/default_edittext_shape"
+                    android:background="@drawable/curved_textbox_bg"
                     android:hint=""
                     android:paddingHorizontal="10dp"
                     android:textSize="@dimen/mediumTextSize"
                     android:typeface="serif"
                     android:minHeight="45dp"
-                    android:inputType="textCapSentences|textShortMessage"
+                    android:editable="false"
                     android:gravity="center_vertical"
                     />
 
@@ -203,8 +226,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="E-Mail ID: "
-                    android:textStyle="bold"
+                    android:text="E-Mail ID"
+
                     android:textColor="@color/black"
                     android:textSize="@dimen/largeHeadingText"/>
 
@@ -213,7 +236,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="8dp"
-                    android:background="@drawable/default_edittext_shape"
+                    android:background="@drawable/curved_textbox_bg"
                     android:paddingHorizontal="10dp"
                     android:typeface="serif"
                     android:hint=""
@@ -225,10 +248,39 @@
 
             </LinearLayout>
 
-        </LinearLayout>
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"/>
+
+            <Button
+                android:id="@+id/e_account_info_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="@dimen/extraLargeText"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:backgroundTint="#FF004DC0"
+                android:text="EDIT ACCOUNT DETAILS"/>
+
+
+            <Button
+                android:id="@+id/save_changes_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="@dimen/extraLargeText"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:backgroundTint="#FF004DC0"
+                android:text="SAVE CHANGES"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
+
+
