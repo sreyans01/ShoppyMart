@@ -46,7 +46,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="409dp"
         android:background="@drawable/roundbutton"
-        android:text="Address"
+        android:text="Wishlist"
         android:textColor=" #121F6D"
         android:textAlignment="center"
         android:textSize="24sp"
