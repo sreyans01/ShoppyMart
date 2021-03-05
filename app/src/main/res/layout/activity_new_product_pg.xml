@@ -1,0 +1,333 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootRL"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background=""
+    android:translationY="-5dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="#5aa469"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="63dp"
+                android:layout_height="43dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="-8dp"
+                android:src="@drawable/ic_arrow_back_blue_24dp"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="15dp"
+                android:backgroundTint=""
+                android:text="Product Details"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+             <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_three_dots" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#adce74"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:background="">
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/banana_chips"
+                    android:layout_gravity="center"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:background="@drawable/product_detailspage_bg">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/product_detailspage_bg">
+
+                    <TextView
+                        android:id="@+id/product_name_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="40dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Banana Chips"
+                        android:fontFamily="@font/rubik_bold"
+                        android:textColor="#000000"
+                        android:textSize="25sp"/>
+
+
+                    <TextView
+                        android:id="@+id/product_desc_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Crunchy banana chips with medium salt"
+
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:layout_alignTop="@+id/product_name_text"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="40dp"
+
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/product_price_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 50"
+                        android:textSize="25sp"
+                        android:textColor="#006400"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/rubik_bold"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/product_name_text"
+                        android:layout_marginHorizontal="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tag1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="80dp"
+                        android:background="@drawable/product_detailspage_tag_bg"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:text="Everyday Essentials"
+                        android:layout_alignTop="@+id/product_desc_text"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tag2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/product_desc_text"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="80dp"
+                        android:layout_toRightOf="@+id/tag1"
+
+                        android:background="@drawable/product_detailspage_tag_bg"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="South Indian"
+
+                        android:gravity="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/tag3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/product_detailspage_tag_bg"
+                        android:fontFamily="@font/rubik_medium"
+                        android:layout_alignTop="@+id/tag1"
+                        android:gravity="center"
+                        android:text="Snack"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tag4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tag2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/tag3"
+
+
+                        android:background="@drawable/product_detailspage_tag_bg"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="Summer"
+                        android:gravity="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tag5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tag2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/tag4"
+
+
+                        android:background="@drawable/product_detailspage_tag_bg"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="Salty"
+                        android:gravity="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/contact_seller_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignTop="@id/tag3"
+
+
+                        android:layout_marginLeft="20dp"
+
+
+                        android:layout_marginTop="99dp"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="Contact Seller"
+
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_below="@id/tag4"
+
+
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="44dp"
+
+                        android:layout_toRightOf="@id/contact_seller_text"
+                        android:src="@drawable/phone_icon" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/product_detailspage_bg"
+                        android:layout_alignTop="@+id/contact_seller_text"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginHorizontal="20dp"
+
+                        >
+
+                        <ImageButton
+                            android:id="@+id/image_button_minus"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="0dp"
+
+                            android:background="@drawable/ic_minus"
+                            android:backgroundTint="#ff0000"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/rubik_medium"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="20sp" />
+
+                        <ImageButton
+                            android:id="@+id/image_button_plus"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            android:background="@drawable/ic_plus" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/tag5"
+                        android:layout_marginTop="180dp"
+                        android:id="@+id/add_to_cart_button"
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/product_details_page_cart_button"
+                        android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                        android:fontFamily="@font/rubik_medium"
+                        android:padding="16dp"
+                        android:paddingRight="16dp"
+                        android:text="Add to Cart"
+                        android:textSize="20sp"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                         />
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
