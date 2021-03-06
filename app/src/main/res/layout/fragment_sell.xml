@@ -1,25 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity"
+    android:background="@drawable/activity_account_info"
+
+    >//change tools:context
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="63dp"
+                android:layout_height="43dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="-14dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ic_arrow_back_blue_24dp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="15dp"
+
+                android:text="Sellers' Corner"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Seller Fragment"
-        android:layout_centerInParent="true"/>
+        </RelativeLayout>
 
-    <Button
-        android:id="@+id/addItemBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/addicon"
-        android:drawablePadding="8dp"
-        android:backgroundTint="#EFFAEF"
-        android:elevation="6dp"
-        android:padding="12dp"
-        android:layout_centerHorizontal="true"
-        android:text="Add Item"/>
+    </androidx.appcompat.widget.Toolbar>
 
+
+    <RelativeLayout
+        android:id="@+id/rootRL"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background=""
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="131dp"
+            android:src="@drawable/elvyn_claire_profile"
+            android:translationX="-5dp"
+            android:translationY="100dp"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:id="@+id/seller_info_button"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginTop="325dp"
+            android:background="@drawable/roundbutton"
+
+            android:bottomLeftRadius="20dp"
+            android:bottomRightRadius="20dp"
+            android:text="ACCOUNT DETAILS"
+            android:textAlignment="center"
+            android:textColor=" #121F6D
+"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/seller_view_product_button"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginTop="400dp"
+
+
+            android:background="@drawable/roundbutton"
+            android:text="VIEW MY PRODUCTS"
+            android:textAlignment="center"
+            android:textColor=" #121F6D"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/seller_add_product_button"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginTop="405dp"
+
+
+            android:background="@drawable/roundbutton"
+            android:text="ADD PRODUCT"
+            android:textAlignment="center"
+            android:textColor=" #121F6D"
+            android:textSize="24sp"
+            android:translationX="70dp"
+            android:translationY="70dp" />
+
+        <Button
+            android:id="@+id/seller_sales_analysis_button"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginTop="400dp"
+
+
+            android:background="@drawable/roundbutton"
+            android:text="Sales Analysis"
+            android:textAlignment="center"
+            android:textColor=" #121F6D"
+            android:textSize="24sp"
+            android:translationX="70dp"
+            android:translationY="150dp" />
+    </RelativeLayout>
 </RelativeLayout>
